@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Scan"
+        android:background="@color/colorAccent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:id="@+id/scan"
+        android:layout_gravity="center_horizontal"
+        android:textOn="Scanning..."
+        android:textOff="Scan" />
+
+    <View
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paired Devices" />
+
+    <ListView
+        android:id="@+id/pairedDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Discovered Devices" />
+
+    <ListView
+        android:id="@+id/discoveredDeviceList"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+
+</LinearLayout>
